@@ -10,7 +10,7 @@ export default function sendMessage(req: NextApiRequest, res: NextApiResponse) {
   client.messages
     .create({
       body: message,
-      from: 'YOUR_PHONE',
+      from: 'YOUR_PHONE_NUMBER',
       to: phone,
     })
     .then((message) =>
